@@ -1,0 +1,31 @@
+.cont1
+ {
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+}
+
+.h1 {
+    font-size: 30px !important;
+    font-weight: bolder !important;
+    margin-bottom: 50px !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.int1 {
+    height: 40px !important;
+    border-radius: 5px !important;
+}
+
+.btn1 {
+    font-weight: bolder !important;
+    width: 400px !important;
+    font-size: 20px !important;
+    text-align: center !important;
+       color: white !important;
+    border-radius: 9px !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.t1{
+    margin-top: 20px !important;
+    text-align: center;
+}
