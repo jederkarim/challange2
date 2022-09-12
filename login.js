@@ -27,7 +27,7 @@ function login() {
       var users = JSON.parse(localStorage.getItem('users')) || [];
       var util = users.find(user => user.email == email.value && user.mp == mp.value)    /* parcours du tableau users.map *//*users.find la recherche d'un element*/ 
 
-      window.location.href = "/auth-javascript/js/dashboard.html";
+      window.location.href = "/dashboard.html";
       
       
    }

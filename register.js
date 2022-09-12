@@ -69,22 +69,16 @@ function register() {
          email: email.value,
          mp: mp1.value
       }
-
       var users = JSON.parse(localStorage.getItem('users')) || [] ;  /*localStorage.getItem('users') chaine de carractere ---JSON.parse(localStorage.getItem('users')) JSOn mettre le chaine de c dans un tableau */
-      //   if ()
-
-
-
-
-
-
-
-      var users = JSON.parse(localStorage.getItem('users')) || [] ;  /*localStorage.getItem('users') chaine de carractere ---JSON.parse(localStorage.getItem('users')) JSOn mettre le chaine de c dans un tableau */
-      console.log(users);
-      users.push(data);/* ajout des donnees a la fin du tableau*/
-      localStorage.setItem('users', JSON.stringify(users)) /*stocker les elements dans users et  JSON.stringify(users) lui rendre en tableau */
-      console.log(data);
-      window.location.href = "/auth-javascript/js/login.html";
+      var util = users.find(user => user.email == email.value)    /* parcours du tableau users.map *//*users.find la recherche d'un element*/ 
+      if (util) {
+         alert('user exist')
+      } else {
+         users.push(data);/* ajout des donnees a la fin du tableau*/
+         localStorage.setItem('users', JSON.stringify(users)) /*stocker les elements dans users et  JSON.stringify(users) lui rendre en tableau */
+         console.log(data);
+         window.location.href = "/login.html";
+      }
    }
 
 };
